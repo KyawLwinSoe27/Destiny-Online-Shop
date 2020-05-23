@@ -69,8 +69,9 @@ h5{
 .products .img .item img{
     width: 100%;
     display: block;
-    border: 1px solid red;
+    border: 1px solid lightblue;
     transition: .5s;
+    border-radius: 5%;
 }
 .products .img .item img:hover{
     transform: scale(1.1);
@@ -81,4 +82,68 @@ h5{
     border-bottom: 1px solid #000000 ;
     text-align: center;
 }
+@media (max-width: 991px){
+    h5 {
+        text-align: right;
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 400px;
+        display: inline;
+        animation: FadeIn 2s ease;
+    }
+}
+@media (max-width: 767px){
+    h6 {
+        font-size: 20px;
+        font-weight: 700;
+        display: inline;
+    }
+    h5 {
+        text-align: right;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 250px;
+        display: inline;
+        animation: FadeIn 2s ease;
+    }
+    .products h5 {
+        text-align: right;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 0;
+        width: 100%;
+        display: inline;
+        animation: FadeIn 2s ease;
+        text-align: center;
+    }
+    .products .img .item {
+        flex: 0 0 25%;
+        max-width: 25%;
+        position: relative;
+        padding: 8px;
+        animation: FadeIn 3s ease;
+    }
+}
+@media (max-width: 500px){
+    h6 {
+        font-size: 15px;
+        font-weight: 700;
+        display: inline;
+    }
+    h5 {
+        text-align: right;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 200px;
+        display: inline;
+        animation: FadeIn 2s ease;
+    }
+    .products .img .item {
+        flex: 0 0 20%;
+        max-width: 20%;
+        position: relative;
+        padding: 8px;
+        animation: FadeIn 3s ease;
+    }
 
+}
